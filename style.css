@@ -5,18 +5,6 @@
 /* 4. Clear floats after the columns */
 /* For mobile phones: */
 
-/*generate a raibow color pallete variables*/
-:root {
-    --red: #ff0000;
-    --orange: #ffa500;
-    --yellow: #ffff00;
-    --green: #008000;
-    --blue: #0000ff;
-    --indigo: #4b0082;
-    --violet: #ee82ee;
-  }
-  
-
 [class*="col-"] {
   width: 100%;
 }
@@ -35,7 +23,6 @@
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
 }
-
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
@@ -51,82 +38,59 @@
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 }
-
-/*For desktop:*/
-
-
-/* Style the header */
-.header {
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-}
-
-/*generate a sticky navbar*/
-.navbar {
-  overflow: hidden;
-  background-color: #686517;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* generate a sticky footer */
-.footer {
-  background-color: #686517;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Style the content */
-.content {
-  background-color: #fff;
-  padding: 0px;
-}
-
-
-
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
-/*generate a responsive row*/
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  .col-6, .col-s-6 {
+    width: 100%;
+  }
 }
 
-/*normalize body padding*/
-body {
-  margin: 0;
-}
-
-
-/*generate a gradient background*/
-.background {
-    background-color: var(--red);
-}  
-
-/*generate a responsive image*/
-.responsive {
-  width: 100%;
-  height: auto;
-}
-
-/*generate a responsive card with shadow*/
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
+/*generate a header*/
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
   text-align: center;
+  font-size: 35px;
+}
+
+/*generate a navigation bar*/
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/*generate a color pallette*/
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*generate a sticky footer*/
+.footer {
+  background-color: var(--indigo);
+  padding: 10px;
+  text-align: center;
+}
+
+/*create a rainbow color variables*/
+:root {
+  --red: #ff0000;
+  --orange: #ffa500;
+  --yellow: #ffff00;
+  --green: #008000;
+  --blue: #0000ff;
+  --indigo: #4b0082;
+  --violet: #ee82ee;
 }

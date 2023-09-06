@@ -1,68 +1,28 @@
-/* generate a rainbow color variables */
-:root {
-    --red: #ff0000;
-    --orange: #ffa500;
-    --yellow: #ffff00;
-    --green: #008000;
-    --blue: #0000ff;
-    --indigo: #4b0082;
-    --violet: #ee82ee;
-}
-
-/* generate a header */
+/*create a header*/
 .header {
-    background-color: var(--indigo);
+    background-color: #e82c2c;
     padding: 30px;
     text-align: center;
     font-size: 35px;
     color: white;
 }
 
-
-/* generate a sticky footer */
-.footer {
-    background-color: var(--indigo);
-    padding: 10px;
-    text-align: center;
-    color: white;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-/* normalize the body */
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* generate a top navigation bar */
-.topnav {
-    overflow: hidden;
-    background-color: var(--violet);
-}
-
-/* generate a card with box shadow */
+/* create a card with a red border */
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     max-width: 300px;
     margin: auto;
     text-align: center;
     font-family: arial;
 }
 
-/* generate a responsive grid
-    with 3 columns */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-/* generate a column */
-.column {
-    flex: 33%;
-    max-width: 33%;
-    padding: 0 4px;
+/*create a sticky footer*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #e82c2c;
+    color: white;
+    text-align: center;
 }
